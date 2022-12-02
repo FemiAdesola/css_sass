@@ -86,4 +86,26 @@ header {
   cursor: pointer;
 }
 
+.description-section {
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.4;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vh;
+  height: 7em;
+  margin: auto;
+  transform: rotate(-90deg) translate(-50%, 2em);
+  transform-origin: 0 50%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*# sourceMappingURL=style.css.map */
