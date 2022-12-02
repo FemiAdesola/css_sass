@@ -1,0 +1,23 @@
+{
+  "name": "fs13-css-sass",
+  "version": "1.0.0",
+  "description": "tasks about sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch style.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FemiAdesola/fs13-CSS-SASS.git"
+  },
+  "author": "Femi Adesola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FemiAdesola/fs13-CSS-SASS/issues"
+  },
+  "homepage": "https://github.com/FemiAdesola/fs13-CSS-SASS#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
