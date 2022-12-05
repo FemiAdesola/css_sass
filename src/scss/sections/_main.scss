@@ -272,6 +272,32 @@ form{
     }
 }
 
+.pagination-section{
+    margin: 0 auto;
+    padding: 0 55px;
+    & .pagination-wrap{
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1230px ;
+        @include mixins.display-flew-wrap;
+    }
+    & .loadmore{
+        @include mixins.button;
+        width: calc(80% - 40px);
+        border-radius: none;
+        margin-top: 10px;
+        font-weight: fonts.$font-weight-bolder;
+        border-radius: spacing.$common-border-radius;
+        background-color: #363643;
+        border: none;
+      &:hover{
+        background-color:colors.$color-apricot ;
+        color: colors.$global-primary-color;
+
+      }
+    }
+}
+
 .description-section{
     font-size: 13px;
     font-weight:800;
