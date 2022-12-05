@@ -47,3 +47,7 @@
     text-align: center;
     outline: none;
 }
+
+@mixin global-section {
+    padding: 0 55px;
+}

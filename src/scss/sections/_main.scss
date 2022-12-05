@@ -278,7 +278,7 @@ form{
     & .pagination-wrap{
         justify-content: center;
         margin: 0 auto;
-        max-width: 1230px ;
+        max-width: spacing.$max-width-wrap;
         @include mixins.display-flew-wrap;
     }
     & .loadmore{

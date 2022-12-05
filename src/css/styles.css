@@ -389,6 +389,92 @@ form button:hover {
   flex-wrap: wrap;
 }
 
+.footer-section {
+  padding-top: 5vh;
+  flex-shrink: 0;
+}
+.footer-section__footer_wrap {
+  align-items: center;
+  margin: 8vh auto 0;
+  max-width: 1230px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-section__footer_wrap .footer-nav {
+  line-height: 1.1;
+  padding: 0 0 5px 10px;
+}
+.footer-section__footer_wrap .footer-nav ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.footer-section__footer_wrap .footer-nav li {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: "Corben", serif;
+}
+.footer-section__footer_wrap .footer-nav a {
+  text-decoration: none;
+  position: relative;
+  margin: 0 0.2em;
+  padding: 0.2em;
+  color: #FFFFFF;
+}
+.footer-section__footer_wrap .footer-nav a::before {
+  content: " ";
+  position: absolute;
+  top: 0em;
+  right: -0.3em;
+  width: 0.5em;
+  height: 0.5em;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  border-radius: 7px;
+  color: #545454;
+}
+.footer-section__footer_wrap .footer-nav a:hover::before {
+  background-color: #545454;
+}
+.footer-section__footer_wrap .footer-nav a:active::before {
+  background-color: #FFB469;
+}
+.footer-section__footer_wrap .footer-icons {
+  flex: 0 0 60%;
+  justify-content: flex-end;
+  padding-right: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-section__footer_wrap .footer-icons svg {
+  width: 19px;
+  height: 19px;
+  margin: 20px;
+}
+.footer-section__footer_wrap .footer-icons_svg {
+  transition: fill 0.2s ease;
+  fill: #ebebeb;
+}
+.footer-section__footer_wrap .footer-icons_svg:hover {
+  fill: #FFB469 !important;
+}
+.footer-section__footer_wrap .footer-icons_svg a {
+  line-height: 1;
+}
+.footer-section__footer_wrap .footer-copyright {
+  font-size: 10px;
+  line-height: 1.3;
+  padding: 10px 30px 30px 15px;
+  text-align: left;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.footer-section__footer_wrap .footer-copyright a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+
 html,
 body {
   margin: 0;
