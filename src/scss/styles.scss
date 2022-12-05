@@ -1,0 +1,24 @@
+@use "shared/variables/colors";
+@use "shared/variables/fonts";
+@use "shared/variables/spacing";
+
+@use "shared/inheritance/mixins";
+
+@use "features/button";
+
+@use "sections/header";
+@use "sections/main";
+@use "sections/footer";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color:colors.$bg-primary-color;
+    @include mixins.position;
+    @include mixins.word-break;
+    height: 100%;
+    font-family:fonts.$font-family-primary ;
+    line-height: 1.5;
+    flex-direction: column;
+}

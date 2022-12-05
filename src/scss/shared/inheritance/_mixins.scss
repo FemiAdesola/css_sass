@@ -1,0 +1,14 @@
+@mixin position{
+    position: relative;
+    display: flex;
+}
+
+@mixin word-break{
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+@mixin display-flew-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
