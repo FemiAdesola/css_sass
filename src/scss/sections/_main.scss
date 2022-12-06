@@ -403,6 +403,13 @@ form{
         margin: 30px 0;
         font-weight: 400;
         font-family: fonts.$font-family-primary;
+        &::before{
+            content: " ";
+            position: absolute;
+            top: 17.5em;
+            border-top: 2px solid #333350;
+            width: 1.7em;
+        }
 
     }
     & .loop-meta-2{
