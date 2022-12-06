@@ -71,7 +71,8 @@
                 content: ' ';
                 background-image:url("https://images.unsplash.com/photo-1562664377-709f2c337eb2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
                 background-size: cover;
-                background-repeat: no-repeat;  
+                background-repeat: no-repeat; 
+                background-position: center; 
                 position: absolute;
                 height: 26em;
                 width:spacing.$width-scale ;
@@ -156,6 +157,7 @@
         content: ' ';
         background-image:url("https://images.unsplash.com/photo-1566764581662-6cd06d381aef?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
         background-size: cover;
+        background-position: center;
         height: 200px;
         width: spacing.$width-scale;
         border-radius: spacing.$common-border-radius;
@@ -166,6 +168,7 @@
         background-image:url("https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
         background-size: cover;
         background-repeat: no-repeat;  
+        background-position: center;
         height: spacing.$height-scale;
         width: spacing.$width-scale;
         border-radius: spacing.$common-border-radius;
@@ -176,7 +179,8 @@
         content: ' ';
         background-image:url("https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
         background-size: cover;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat; 
+        background-position: center; 
         height: spacing.$height-scale;
         width: spacing.$width-scale;
         border-radius: spacing.$common-border-radius;
@@ -261,7 +265,6 @@ form{
         }
     }
     & button{
-        @include mixins.button;
         font-family:fonts.$font-family-primary;
         border-radius: spacing.$common-border-radius;
         border: none;
@@ -270,6 +273,152 @@ form{
             color: colors.$global-primary-color;
         }
     }
+}
+.loop-section{
+   margin-bottom: 10px;
+   position: relative;
+   z-index: 1;
+  &__loop-wrap-1{
+    width: spacing.$width-scale;
+    max-width: spacing.$max-width-wrap;
+    margin: 0 auto;
+    @include mixins.display-flew-wrap;
+    & .loop-item-1{
+       @include mixins.section-loop-item;
+        &__loop-content-wrap-1{
+            width: spacing.$width-scale;
+        }
+        &::before{
+            content: ' ';
+            background-image:url("https://images.unsplash.com/photo-1558697698-9300a84a6a99?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+            @include mixins.universal-img;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    & .loop-item-2{
+       @include mixins.section-loop-item;
+        background-color: #FED672;
+        &__loop-content-wrap-2{
+            width: spacing.$width-scale;
+        }
+        &::before{
+            content: ' ';
+            background-image:url("https://images.unsplash.com/photo-1543248939-ff40856f65d4?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+            @include mixins.universal-img;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.2;
+        }
+    }
+  }
+}
+
+.loop-content-1{
+    width: spacing.$width-scale;
+    & .loop-tags-1{
+       @include mixins.section-loop-tags;
+        & a{
+            @include mixins.universal-a;
+             
+        }
+    }
+    & .loop-title-1{
+       @include mixins.section-loop-title;
+        & svg{
+           @include mixins.section-svg;
+            fill: #ebebeb;
+        }
+        & a{
+           @include mixins.section-loop-title-a;
+        }
+        & span{
+            position: absolute;
+            & .loop-svg-1{
+                transition: fill 0.2s ease;
+            }
+        }
+    }
+    & h2 {
+       @include mixins.sections-h2; 
+    }
+    & .loop-meta-1{
+       @include mixins.section-loop-meta;
+        & a{
+          @include mixins.sections-loop-meta-a;
+        }
+    }
+     & .loop-meta-1{
+       @include mixins.section-loop-meta;
+        & a{
+          @include mixins.sections-loop-meta-a;
+        }
+    }
+
+}
+
+.loop-content-2{
+    width: spacing.$width-scale;
+     color: #333350;
+    & .loop-tags-2{
+       @include mixins.section-loop-tags;
+        & a{
+            @include mixins.universal-a;
+            color: #333350;
+            border-color:  #333350;
+             
+        }
+    }
+    & .loop-title-2{
+       @include mixins.section-loop-title;
+        & svg{
+           @include mixins.section-svg;
+            fill: #333350;;
+        }
+        & a{
+           @include mixins.section-loop-title-a;
+            color: #333350;
+        }
+        & span{
+            position: absolute;
+            & .loop-svg-2{
+                transition: fill 0.2s ease;
+            }
+        }
+    }
+    & h2 {
+       @include mixins.sections-h2; 
+    }
+    & .loop-excerpt{
+        font-size: 20px;
+        line-height: 1.35;
+        width: 80%;
+        max-width: 850;
+        padding: 12px 0;
+        margin: 30px 0;
+        font-weight: 400;
+        font-family: fonts.$font-family-primary;
+
+    }
+    & .loop-meta-2{
+       @include mixins.section-loop-meta;
+        & a{
+          @include mixins.sections-loop-meta-a;
+        }
+    }
+     & .loop-meta-2{
+       @include mixins.section-loop-meta;
+        & a{
+            @include mixins.sections-loop-meta-a;
+            color: #333350;
+        }
+    }
+
 }
 
 .pagination-section{
@@ -282,7 +431,6 @@ form{
         @include mixins.display-flew-wrap;
     }
     & .loadmore{
-        @include mixins.button;
         width: calc(80% - 40px);
         border-radius: none;
         margin-top: 10px;

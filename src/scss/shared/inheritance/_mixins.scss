@@ -1,4 +1,6 @@
 @use "../variables/colors";
+@use "../variables/fonts";
+@use "../variables/spacing";
 
 @mixin position{
     position: relative;
@@ -14,23 +16,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-@mixin button{
-    width: 165px;
-    height: auto;
-    color: colors.$primary-text-color;
-    background-color: colors.$btn-color;
-    font-size: 12px;
-    margin: 5px 0 0 0;
-    margin-top: 20px;
-    padding: 32px 35px 31px;
-    cursor: pointer;
-    outline: 0;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
 
 @mixin input{
     width: 65%;
@@ -50,4 +35,103 @@
 
 @mixin global-section {
     padding: 0 55px;
+}
+
+@mixin universal-a{
+    font-size: 8px;
+    line-height: 1.3;
+    display: inline-block;
+    margin: 7px 6px 0 0;
+    padding: 4px 6px 4px 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid;
+    color:colors.$primary-text-color;
+    border-color: colors.$primary-text-color;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin universal-img{
+    background-size:cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: spacing.$common-border-radius;
+}
+
+@mixin sections-h2{
+    display: block;
+    font-weight:fonts.$font-weight-bold;
+    font-family: fonts.$font-family-secondary;
+    margin-block-start: 13px;
+    margin-block-end: 13px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@mixin section-loop-tags{
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    max-width: 500px;
+    margin-bottom: 25px;
+    font-weight: fonts.$font-family-secondary;
+}
+
+@mixin section-loop-meta{
+    font-size: 15px;
+    position: relative;
+    font-weight:fonts.$font-weight-bolder;
+    pointer-events: none;
+    z-index: 2;
+    line-height: 1.3;
+}
+
+@mixin section-loop-title {
+    line-height: 1.4;
+    z-index: 2;
+    position: relative;
+    margin: 0 0 30px;
+    pointer-events: none;
+    width: spacing.$width-scale;
+    font-size:45px ;
+}
+
+
+@mixin section-loop-title-a {
+    pointer-events: auto;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: colors.$global-color;
+}
+
+@mixin section-loop-item{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 17vh 16% 18vh 12%;
+    border-radius: spacing.$common-border-radius; 
+}
+
+@mixin sections-loop-meta-a{
+    pointer-events: auto; 
+    display: inline-block;
+    text-decoration: none; 
+    color: colors.$global-color;
+}
+
+@mixin section-svg {
+    overflow: visible;
+    width: 35px;
+    margin: 16px 0 0 2px;
 }

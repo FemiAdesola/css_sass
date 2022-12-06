@@ -1,0 +1,20 @@
+@use "../shared/variables/colors";
+@use "../shared/variables/fonts";
+
+
+
+button{
+    width: 165px;
+    height: auto;
+    color: colors.$primary-text-color;
+    background-color: colors.$btn-color;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    margin-top: 20px;
+    padding: 32px 35px 31px;
+    cursor: pointer;
+    outline: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+}
