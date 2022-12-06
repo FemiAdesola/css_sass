@@ -378,6 +378,7 @@ form{
             opacity: 0.4;
         }
     }
+
     & .loop-item-5{
        @include mixins.section-loop-item;
         background-color: #ffb469;
@@ -392,6 +393,52 @@ form{
             opacity: 0.3;
         }
     }
+
+    & .loop-item-6{
+       @include mixins.section-loop-item;
+        background-color: transparent;
+        &::before{
+            content: ' ';
+            background-image:url("https://images.unsplash.com/photo-1528441397448-a44d50563cf8?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+            @include mixins.universal-img;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+    }
+
+    & .loop-item-7{
+       @include mixins.section-loop-item;
+        background-color: #ff9ed8;
+        &::before{
+            content: ' ';
+            background-image:url("https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+            @include mixins.universal-img;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.2;
+        }
+    }
+
+    & .loop-item-8{
+       @include mixins.section-loop-item;
+        background-color: transparent;
+        &::before{
+            content: ' ';
+            background-image:url("https://images.unsplash.com/photo-1551216223-37c8d1dbec5c?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+            @include mixins.universal-img;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+    }
+    
   }
 }
 
@@ -428,6 +475,24 @@ form{
 
     & h2 {
        @include mixins.sections-h2; 
+    }
+
+     & .loop-excerpt{
+        font-size: 20px;
+        line-height: 1.35;
+        width: 80%;
+        max-width: 850;
+        padding: 12px 0;
+        margin: 30px 0;
+        font-weight: 400;
+        font-family: fonts.$font-family-primary;
+        &::before{
+            content: " ";
+            position: absolute;
+            top: 17.5em;
+            border-top: 2px solid colors.$primary-text-color;
+            width: 1.7em;
+        }
     }
 
     & .loop-meta-1{
@@ -496,8 +561,8 @@ form{
             border-top: 2px solid #333350;
             width: 1.7em;
         }
-
     }
+
     & .loop-meta-2{
        @include mixins.section-loop-meta;
         & a{
