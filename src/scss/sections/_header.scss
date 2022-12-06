@@ -26,12 +26,15 @@ header{
         text-align: center;
         justify-content: flex-end;
         z-index: 3;
+
         ul,li, a {
             display: inline-block;
         }
+
         nav {
              font-size: 15px;
         }
+
         a {
             text-decoration: none;
             position: relative;
@@ -39,6 +42,7 @@ header{
             padding: 0.2em;
             color: colors.$bg-secondary-color;
         }
+
         a::before {
             content: ' ';
             position: absolute;
@@ -51,9 +55,11 @@ header{
             border-radius: 7px;
             color: colors.$secondary-text-color;
         }
+
         a:hover::before{
             background-color:colors.$secondary-text-color;
         }
+        
         a:active::before{
             background-color: colors.$color-apricot;
         }

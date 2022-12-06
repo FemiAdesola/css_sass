@@ -6,24 +6,29 @@
 .footer-section{
     padding-top: 5vh;
     flex-shrink: 0;
+
     &__footer_wrap{
         align-items: center;
         margin: 8vh auto 0;
         max-width: spacing.$max-width-wrap;
         @include mixins.display-flew-wrap;
+
         & .footer-nav{
             line-height: 1.1;
             padding: 0 0 5px 10px;
+
             & ul{
                 margin: 0;
                 padding: 0;
                 display: block;
             }
+
             & li {
                 display: inline-block;
                 font-size: 13px;
                 font-weight: fonts.$font-family-secondary;
             }
+
             & a {
                 text-decoration: none;
                 position: relative;
@@ -31,6 +36,7 @@
                 padding: 0.2em;
                 color: colors.$bg-secondary-color;
             }
+
             a::before {
                 content: ' ';
                 position: absolute;
@@ -43,36 +49,43 @@
                 border-radius: 7px;
                 color: colors.$secondary-text-color;
             }
+
             a:hover::before{
                 background-color:colors.$secondary-text-color;
             }
+
             a:active::before{
                 background-color: colors.$color-apricot;
             }
-            
         }
+
         & .footer-icons{
             flex: 0 0 60%;
             justify-content: flex-end;
             padding-right: 2px;
             @include mixins.display-flew-wrap;
+
             & svg{
                 width: 19px;
                 height: 19px;
                 margin: 20px;
             }
-            }
-            & .footer-icons_svg{
+
+        }
+            
+        & .footer-icons_svg{
                transition: fill 0.2s ease;
                fill:colors.$primary-text-color ;
                 &:hover{
                 fill:colors.$color-apricot !important;   
             }
+
             & a{
                 line-height: 1;
             
             }   
         }
+
         & .footer-copyright{
             font-size: 10px;
             line-height: 1.3;
@@ -81,6 +94,7 @@
             letter-spacing: 0.7px;
             text-transform: uppercase;
             opacity: 0.8;
+            
             & a{
                 text-decoration: none;
                 color:colors.$primary-text-color ;

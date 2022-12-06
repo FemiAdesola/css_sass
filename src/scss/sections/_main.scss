@@ -9,6 +9,7 @@
     padding: 0 15em;
     position: relative;
     color: colors.$global-color;
+
     & .pinned-label{
         position: absolute;
         height: 1.5em;
@@ -24,6 +25,7 @@
         color: colors.$global-primary-color;
         background-color: colors.$global-color;
     }
+
     & a{
         color: colors.$global-color;
         text-decoration: none;
@@ -41,6 +43,7 @@
             font-size: 13px;    
         }
     }
+
     &__pinned-wrap{
         display: grid;
         text-align: center;
@@ -64,9 +67,11 @@
                     width: 400px;
                 }
             }
+
             &:nth-child(1):hover{
                 transform: translateY(-3px);
             }
+
             &:nth-child(1)::before{
                 content: ' ';
                 background-image:url("https://images.unsplash.com/photo-1562664377-709f2c337eb2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
@@ -109,6 +114,7 @@
     &:hover{
         transform: translateY(-3px);
     }
+
     &:nth-child(1){
         background-color: colors.$color-blue;
         cursor: pointer;
@@ -116,6 +122,7 @@
             color:colors.$color-blue ;
         }
     }
+
     &:nth-child(2){
         background-color: colors.$color-apricot;
         color: colors.$global-primary-color;
@@ -124,6 +131,7 @@
             color:colors.$color-apricot ;
         }
     }
+
     &:nth-child(3){
         background-color:  colors.$color-pulple;
         cursor: pointer;
@@ -131,6 +139,7 @@
             color:colors.$color-pulple ;
         }
     }
+
     &:nth-child(4) {
         background-color:colors.$color-pink ;
         color: colors.$global-primary-color;
@@ -139,6 +148,7 @@
             color:colors.$color-pink ;
         }
     }
+
     &:nth-child(2),
     &:nth-child(4){
         & a{
@@ -153,6 +163,7 @@
             background-color: colors.$global-primary-color;
         }
     }
+
     &:nth-child(1)::before{
         content: ' ';
         background-image:url("https://images.unsplash.com/photo-1566764581662-6cd06d381aef?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
@@ -163,6 +174,7 @@
         border-radius: spacing.$common-border-radius;
         opacity: 0.2;
     }
+
     &:nth-child(3)::before{
         content: ' ';
         background-image:url("https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
@@ -192,6 +204,7 @@
     & .subscribe-wrap{
     margin: 0 auto;
     text-align: center;
+
         &__subscribe-content{
             width: spacing.$width-scale;
             max-width: 800px;
@@ -223,6 +236,7 @@ form{
         max-width: 450px;
         margin: 0 auto 40px;
     }
+
    &  .subscribe-writting-text {
         animation: typing 15s steps(40), blink 0.6s step-end infinite ;
         white-space: nowrap;
@@ -234,6 +248,7 @@ form{
         font-family:fonts.$font-family-primary;
         animation-iteration-count: infinite;
     }
+
     @keyframes typing {
         0%{
             width: 0;
@@ -253,6 +268,7 @@ form{
             border-color: transparent;
         }
     }
+
     & input {
         @include mixins.input;
         font-family:fonts.$font-family-primary;
@@ -264,6 +280,7 @@ form{
             transition: 1s;
         }
     }
+
     & button{
         font-family:fonts.$font-family-primary;
         border-radius: spacing.$common-border-radius;
@@ -274,10 +291,12 @@ form{
         }
     }
 }
+
 .loop-section{
    margin-bottom: 10px;
    position: relative;
    z-index: 1;
+
    & .loop-small-heading{
     margin: 30px 0;
     padding: 0 20px;
@@ -289,11 +308,13 @@ form{
     font-weight: fonts.$font-weight-bold;
    width: 100%;
    }
+
   &__loop-wrap-1{
     width: spacing.$width-scale;
     max-width: spacing.$max-width-wrap;
     margin: 0 auto;
     @include mixins.display-flew-wrap;
+
     & .loop-item-1{
        @include mixins.section-loop-item;
         &__loop-content-wrap-1{
@@ -353,6 +374,7 @@ form{
              
         }
     }
+
     & .loop-title-1{
        @include mixins.section-loop-title;
         & svg{
@@ -373,16 +395,18 @@ form{
     & .title-3{
         width: 90%;
     }
-    
+
     & h2 {
        @include mixins.sections-h2; 
     }
+
     & .loop-meta-1{
        @include mixins.section-loop-meta;
         & a{
           @include mixins.sections-loop-meta-a;
         }
     }
+    
      & .loop-meta-1{
        @include mixins.section-loop-meta;
         & a{
@@ -404,6 +428,7 @@ form{
              
         }
     }
+
     & .loop-title-2{
        @include mixins.section-loop-title;
         & svg{
@@ -421,6 +446,7 @@ form{
             }
         }
     }
+
     & h2 {
        @include mixins.sections-h2; 
     }
@@ -448,6 +474,7 @@ form{
           @include mixins.sections-loop-meta-a;
         }
     }
+
      & .loop-meta-2{
        @include mixins.section-loop-meta;
         & a{
@@ -461,12 +488,14 @@ form{
 .pagination-section{
     margin: 0 auto;
     padding: 0 55px;
+
     & .pagination-wrap{
         justify-content: center;
         margin: 0 auto;
         max-width: spacing.$max-width-wrap;
         @include mixins.display-flew-wrap;
     }
+
     & .loadmore{
         width: calc(80% - 40px);
         border-radius: none;
@@ -475,6 +504,7 @@ form{
         border-radius: spacing.$common-border-radius;
         background-color: #363643;
         border: none;
+        
       &:hover{
         background-color:colors.$color-apricot ;
         color: colors.$global-primary-color;
