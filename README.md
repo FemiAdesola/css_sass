@@ -5,6 +5,7 @@
 ![](https://img.shields.io/static/v1?label=SCSS&message=v.1.56&color=blue)
 
 This is a SASS, SCSS  practice @integrify.
+- Click [here](https://femiadesola.github.io/css_sass/) to view the website
 
 ## Table of content
 
