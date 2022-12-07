@@ -319,14 +319,16 @@ form{
         &__loop-content-wrap-1{
             width: spacing.$width-scale;
         }
-        &::before{
-            content: ' ';
-            background-image:url("https://images.unsplash.com/photo-1558697698-9300a84a6a99?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+        & img {
             @include mixins.universal-img;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
+            &:hover{
+                transform: scale(1.01);
+                transition: 0.1s;
+            }
         }
     }
 
@@ -336,30 +338,34 @@ form{
         &__loop-content-wrap-2{
             width: spacing.$width-scale;
         }
-        &::before{
-            content: ' ';
-            background-image:url("https://images.unsplash.com/photo-1543248939-ff40856f65d4?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
-            @include mixins.universal-img;
+        & img{
+           @include mixins.universal-img;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             opacity: 0.2;
+            &:hover{
+                transform: scale(1.01);
+                transition: 0.1s;
+            }
         }
     }
    
     & .loop-item-3{
        @include mixins.section-loop-item;
         background-color: transparent;
-        &::before{
-            content: ' ';
-            background-image:url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+        & img{
             @include mixins.universal-img;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            opacity: 0.7;
+            opacity: 0.5;
+            &:hover{
+                transform: scale(1.01);
+                transition: 0.1s;
+            }
         }
     }
   }
@@ -528,15 +534,17 @@ form{
             &:nth-child(1){
                 background-color: #eebeff;
                 @include mixins.loop-item-grid;
-            &::before{
-                    content: ' ';
-                    background-image:url( "https://images.unsplash.com/photo-1487015307662-6ce6210680f1?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+            & img{
                     @include mixins.universal-img;
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
                     opacity: 0.4;
+                    &:hover{
+                        transform: scale(1.01);
+                        transition: 0.1s;
+                    }
                 }
             }
             & .loop-excerpt{
@@ -553,15 +561,17 @@ form{
             &:nth-child(2){
                 background-color: #ffb469;
                 @include mixins.loop-item-grid;               
-                &::before{
-                    content: ' ';
-                    background-image:url("https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
-                    @include mixins.universal-img;
+                & img{
+                   @include mixins.universal-img;
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
                     opacity: 0.3;
+                    &:hover{
+                        transform: scale(1.01);
+                        transition: 0.1s;
+                    }
                 }
             }
         }
@@ -583,15 +593,17 @@ form{
             &:nth-child(3){
                 background-color: transparent;
                 @include mixins.loop-item-grid;               
-                &::before{
-                    content: ' ';
-                    background-image:url("https://images.unsplash.com/photo-1528441397448-a44d50563cf8?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+                & img{
                     @include mixins.universal-img;
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
                     opacity: 0.4;
+                    &:hover{
+                        transform: scale(1.01);
+                        transition: 0.1s;
+                    }
                 }
             }
         }
@@ -612,15 +624,17 @@ form{
             &:nth-child(4){
                 background-color: #ff9ed8;
                 @include mixins.loop-item-grid;               
-                &::before{
-                    content: ' ';
-                    background-image:url("https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+                & img{
                     @include mixins.universal-img;
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
                     opacity: 0.3;
+                    &:hover{
+                        transform: scale(1.01);
+                        transition: 0.1s;
+                    }
                 }
             }
             & .loop-excerpt{
@@ -649,16 +663,19 @@ form{
             }
             &:nth-child(5){
                 background-color: transparent;
-                @include mixins.loop-item-grid;               
-                &::before{
-                    content: ' ';
-                    background-image:url("https://images.unsplash.com/photo-1551216223-37c8d1dbec5c?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
+                @include mixins.loop-item-grid;
+                transition: all .7s;              
+                & img{
                     @include mixins.universal-img;
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
                     opacity: 0.5;
+                    &:hover{
+                        transform: scale(1.01);
+                        transition: 0.1s;
+                    }
                 }
             }
         }
