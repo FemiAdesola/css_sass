@@ -38,6 +38,11 @@ This is a SASS, SCSS  practice @integrify.
 ```shell
 .
 ├── README.md
+├── img
+│   ├── Header.png
+│   ├── Transition.png
+│   ├── hover.png
+│   └── transform.png
 ├── package-lock.json
 ├── package.json
 └── src
@@ -63,8 +68,30 @@ This is a SASS, SCSS  practice @integrify.
 ```
 ---
 ## Getting started
+
+### Header
+
+- By hovering on the link, it displays gray color on each link, when clicking on each link the gray color turn to yellow.
+
+![header](/img/Header.png)
+
+---
+### Flexbox, transition and text transformation
+
+- CSS flexbox used for text writing, and the width of the text container is determined by the actual length of the text being used in this website. 
+
+![Transition](/img/Transition.png)
+
+---
+### Grid 
+- The CSS Grid Layout Module was in layout for each section with rows and columns. On hovering each card, the background image transform, and an arrow floats out before each bolder text.
+
+![transform](/img/transform.png)
 ### Steps taken 
 <ol>
     <li>The parent (upstream) forked from the repo @integrify GitHub account </li>
     <li>The repository cloned from @integrify GitHub </li>
 </ol>
+
+### Acknowledgement
+This design was formulated from this [website](https://maido-dark.fueko.net/)
