@@ -722,6 +722,17 @@ form button:hover {
   left: 0;
   opacity: 0.4;
 }
+.grid .loop-item:nth-child(1) .loop-excerpt {
+  font-size: 14px;
+}
+.grid .loop-item:nth-child(1) .loop-excerpt::before {
+  content: " ";
+  position: absolute;
+  top: 15em;
+  border-top: 2px solid #333350;
+  width: 1.7em;
+  margin-top: 40px;
+}
 .grid .loop-item:nth-child(2) {
   grid-area: item2;
 }
@@ -756,8 +767,15 @@ form button:hover {
   height: 60%;
   width: 385;
 }
+.grid .loop-item:nth-child(3) h2 {
+  line-height: 30px;
+}
 .grid .loop-item:nth-child(3) h2 a {
   font-size: 25px;
+  margin-top: 25px;
+}
+.grid .loop-item:nth-child(3) h2 svg {
+  width: 25px;
 }
 .grid .loop-item:nth-child(3):nth-child(3) {
   background-color: transparent;
@@ -790,8 +808,15 @@ form button:hover {
   height: 60%;
   width: 385;
 }
+.grid .loop-item:nth-child(4) h2 {
+  line-height: 30px;
+}
 .grid .loop-item:nth-child(4) h2 a {
   font-size: 25px;
+  margin-top: 25px;
+}
+.grid .loop-item:nth-child(4) h2 svg {
+  width: 25px;
 }
 .grid .loop-item:nth-child(4):nth-child(4) {
   background-color: #ff9ed8;
@@ -819,13 +844,31 @@ form button:hover {
   left: 0;
   opacity: 0.3;
 }
+.grid .loop-item:nth-child(4) .loop-excerpt {
+  font-size: 14px;
+}
+.grid .loop-item:nth-child(4) .loop-excerpt::before {
+  content: " ";
+  position: absolute;
+  top: 15em;
+  border-top: 2px solid #333350;
+  width: 1.7em;
+  margin-top: 40px;
+}
 .grid .loop-item:nth-child(5) {
   grid-area: item5;
   height: 60%;
   width: 385;
 }
+.grid .loop-item:nth-child(5) h2 {
+  line-height: 30px;
+}
 .grid .loop-item:nth-child(5) h2 a {
   font-size: 25px;
+  margin-top: 25px;
+}
+.grid .loop-item:nth-child(5) h2 svg {
+  width: 25px;
 }
 .grid .loop-item:nth-child(5):nth-child(5) {
   background-color: transparent;
@@ -855,6 +898,14 @@ form button:hover {
 }
 .grid .loop-item .loop-excerpt {
   font-size: 14px;
+}
+.grid .loop-item .loop-excerpt::before {
+  content: " ";
+  position: absolute;
+  top: 15em;
+  border-top: 2px solid #333350;
+  width: 1.7em;
+  border-top: 2px solid #FFFFFF;
 }
 
 .pagination-section {

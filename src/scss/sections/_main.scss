@@ -314,17 +314,6 @@ form{
     max-width: spacing.$max-width-wrap;
     margin: 0 auto;
     @include mixins.display-flew-wrap;
-    //  display: grid;
-    //     text-align: center;
-    //     // grid-template-columns: 580px 832px;
-    //     grid-template-areas: 
-    //     "item1"
-    //     // "item3 item3 item4 item4 item5 item5"
-    //         ;
-    //     padding: 0.4em;
-    //     gap: 1em;
-       
-
     & .loop-item-1{
        @include mixins.section-loop-item;
         &__loop-content-wrap-1{
@@ -539,7 +528,7 @@ form{
             &:nth-child(1){
                 background-color: #eebeff;
                 @include mixins.loop-item-grid;
-                &::before{
+            &::before{
                     content: ' ';
                     background-image:url( "https://images.unsplash.com/photo-1487015307662-6ce6210680f1?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=850&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ");
                     @include mixins.universal-img;
@@ -548,9 +537,17 @@ form{
                     bottom: 0;
                     left: 0;
                     opacity: 0.4;
-                    }
                 }
             }
+            & .loop-excerpt{
+            font-size: 14px;
+            &::before{
+            content: " ";
+            @include mixins.loop-excerpt-grid;
+            margin-top: 40px;
+            }
+        }
+        }
         &:nth-child(2){
             grid-area: item2;
             &:nth-child(2){
@@ -573,8 +570,15 @@ form{
             grid-area: item3;
             height:60% ;
             width: 385;
+            & h2 {
+                line-height: 30px;
+            }
             & h2 a{
                 font-size: 25px;
+                margin-top: 25px;
+            }
+             & h2 svg{
+                width: 25px;
             }
             &:nth-child(3){
                 background-color: transparent;
@@ -595,8 +599,15 @@ form{
             grid-area: item4;
             height:60% ;
             width: 385;
+            & h2 {
+                line-height: 30px;
+            }
             & h2 a{
                 font-size: 25px;
+                margin-top: 25px;
+            }
+             & h2 svg{
+                width: 25px;
             }
             &:nth-child(4){
                 background-color: #ff9ed8;
@@ -612,13 +623,29 @@ form{
                     opacity: 0.3;
                 }
             }
+            & .loop-excerpt{
+                font-size: 14px;
+                &::before{
+                content: " ";
+                @include mixins.loop-excerpt-grid;
+                margin-top: 40px;
+                
+                }
+            }
         }
         &:nth-child(5){
             grid-area: item5;
             height:60% ;
             width: 385;
+            & h2 {
+                line-height: 30px;
+            }
             & h2 a{
                 font-size: 25px;
+                margin-top: 25px;
+            }
+             & h2 svg{
+                width: 25px;
             }
             &:nth-child(5){
                 background-color: transparent;
@@ -637,6 +664,11 @@ form{
         }
         & .loop-excerpt{
             font-size: 14px;
+            &::before{
+            content: " ";
+            @include mixins.loop-excerpt-grid;
+            border-top: 2px solid colors.$global-color;
+            }
         }
     }
 }

@@ -142,3 +142,11 @@
     margin: 20px auto;
     border-radius: spacing.$common-border-radius; 
 }
+
+@mixin loop-excerpt-grid {
+    position: absolute;
+    top: 15em;
+    border-top: 2px solid #333350;
+    width: 1.7em;
+    
+}
