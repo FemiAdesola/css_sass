@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass --watch src/scss/styles.scss:src/css/styles.css"
+    "compile": "sass --watch src/scss/styles.scss:src/css/styles.css",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://femiadesola.github.io/css_sass/",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.56.1"
   }
 }
