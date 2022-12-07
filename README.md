@@ -87,6 +87,8 @@ This is a SASS, SCSS  practice @integrify.
 - The CSS Grid Layout Module was in layout for each section with rows and columns. On hovering each card, the background image transform, and an arrow floats out before each bolder text.
 
 ![transform](/img/transform.png)
+
+---
 ### Steps taken 
 <ol>
     <li>The parent (upstream) forked from the repo @integrify GitHub account </li>
