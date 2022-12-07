@@ -403,7 +403,10 @@ form{
     }
 
     & h2 {
-       @include mixins.sections-h2; 
+       @include mixins.sections-h2;
+       &:hover svg{
+            display: block;
+        }
     }
 
      & .loop-excerpt{
@@ -472,7 +475,10 @@ form{
     }
 
     & h2 {
-       @include mixins.sections-h2; 
+       @include mixins.sections-h2;
+       &:hover svg{
+            display: block;
+        }
     }
     & .loop-excerpt{
         font-size: 20px;
@@ -531,6 +537,12 @@ form{
         padding-left: 50px;
         &:nth-child(1){
             grid-area: item1;
+            & h2 {
+                line-height: 50px;
+                &:hover svg{
+                    display: block;
+                }
+            }
             &:nth-child(1){
                 background-color: #eebeff;
                 @include mixins.loop-item-grid;
@@ -552,12 +564,18 @@ form{
             &::before{
             content: " ";
             @include mixins.loop-excerpt-grid;
-            margin-top: 40px;
+            margin-top: 30px;
             }
         }
         }
         &:nth-child(2){
             grid-area: item2;
+            & h2 {
+                line-height: 50px;
+                &:hover svg{
+                    display: block;
+                }
+            }
             &:nth-child(2){
                 background-color: #ffb469;
                 @include mixins.loop-item-grid;               
@@ -582,6 +600,9 @@ form{
             width: 385;
             & h2 {
                 line-height: 30px;
+                &:hover svg{
+                    display: block;
+                }
             }
             & h2 a{
                 font-size: 25px;
@@ -613,6 +634,9 @@ form{
             width: 385;
             & h2 {
                 line-height: 30px;
+                &:hover svg{
+                    display: block;
+                }
             }
             & h2 a{
                 font-size: 25px;
@@ -653,7 +677,11 @@ form{
             width: 385;
             & h2 {
                 line-height: 30px;
+                &:hover svg{
+                    display: block;
+                }
             }
+
             & h2 a{
                 font-size: 25px;
                 margin-top: 25px;
@@ -661,6 +689,8 @@ form{
              & h2 svg{
                 width: 25px;
             }
+          
+            
             &:nth-child(5){
                 background-color: transparent;
                 @include mixins.loop-item-grid;

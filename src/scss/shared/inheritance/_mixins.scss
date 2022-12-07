@@ -130,7 +130,7 @@
 }
 
 @mixin section-svg {
-    overflow: visible;
+    display: none;
     width: 35px;
     margin: 16px 0 0 2px;
 }

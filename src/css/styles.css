@@ -488,7 +488,7 @@ form button:hover {
   font-size: 45px;
 }
 .loop-content-1 .loop-title-1 svg {
-  overflow: visible;
+  display: none;
   width: 35px;
   margin: 16px 0 0 2px;
   fill: #ebebeb;
@@ -517,6 +517,9 @@ form button:hover {
   margin-block-end: 13px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.loop-content-1 h2:hover svg {
+  display: block;
 }
 .loop-content-1 .loop-excerpt {
   font-size: 20px;
@@ -605,7 +608,7 @@ form button:hover {
   font-size: 45px;
 }
 .loop-content-2 .loop-title-2 svg {
-  overflow: visible;
+  display: none;
   width: 35px;
   margin: 16px 0 0 2px;
   fill: #333350;
@@ -632,6 +635,9 @@ form button:hover {
   margin-block-end: 13px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+.loop-content-2 h2:hover svg {
+  display: block;
 }
 .loop-content-2 .loop-excerpt {
   font-size: 20px;
@@ -702,6 +708,12 @@ form button:hover {
 .grid .loop-item:nth-child(1) {
   grid-area: item1;
 }
+.grid .loop-item:nth-child(1) h2 {
+  line-height: 50px;
+}
+.grid .loop-item:nth-child(1) h2:hover svg {
+  display: block;
+}
 .grid .loop-item:nth-child(1):nth-child(1) {
   background-color: #eebeff;
   position: relative;
@@ -739,10 +751,16 @@ form button:hover {
   top: 15em;
   border-top: 2px solid #333350;
   width: 1.7em;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .grid .loop-item:nth-child(2) {
   grid-area: item2;
+}
+.grid .loop-item:nth-child(2) h2 {
+  line-height: 50px;
+}
+.grid .loop-item:nth-child(2) h2:hover svg {
+  display: block;
 }
 .grid .loop-item:nth-child(2):nth-child(2) {
   background-color: #ffb469;
@@ -779,6 +797,9 @@ form button:hover {
 }
 .grid .loop-item:nth-child(3) h2 {
   line-height: 30px;
+}
+.grid .loop-item:nth-child(3) h2:hover svg {
+  display: block;
 }
 .grid .loop-item:nth-child(3) h2 a {
   font-size: 25px;
@@ -822,6 +843,9 @@ form button:hover {
 }
 .grid .loop-item:nth-child(4) h2 {
   line-height: 30px;
+}
+.grid .loop-item:nth-child(4) h2:hover svg {
+  display: block;
 }
 .grid .loop-item:nth-child(4) h2 a {
   font-size: 25px;
@@ -876,6 +900,9 @@ form button:hover {
 }
 .grid .loop-item:nth-child(5) h2 {
   line-height: 30px;
+}
+.grid .loop-item:nth-child(5) h2:hover svg {
+  display: block;
 }
 .grid .loop-item:nth-child(5) h2 a {
   font-size: 25px;
