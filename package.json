@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/FemiAdesola/fs13-CSS-SASS/issues"
   },
-  "homepage": "https://github.com/FemiAdesola/fs13-CSS-SASS#readme",
+  "homepage": "https://femiadesola.github.io/css_sass/",
   "dependencies": {
     "sass": "^1.56.1"
   }
